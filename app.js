@@ -3,7 +3,7 @@ var app = express();
 var fs = require("fs");
 const PORT = process.env.PORT || 8081;
 
-app.get("/test", function (req, res) {
+app.get("/", function (req, res) {
   res.json({ result: "ok", data: [1, 2, 3, 4, 5] });
 });
 app.get("/getUsers", function (req, res) {
